@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imagens/logoic.ico" type="image/x-icon">
+    <title>Portal Recebimento Fiscal</title>
+</head>
+<body>
+    <header>
+        <nav  class="menu">
+            <span>Portal Recebimento Fiscal</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="filial.html">Filial</a></li>
+                <li><a href="classificacao.html">Classificação</a></li>
+            </ul>
+            <img class="logo-ic" src="./imagens/ictransportes.png" alt="IC Transportes">
+        </nav>
+    </header>
+    <main>
+        <section id="recursos">
+<!--Removedor de Caracteres-->
+        <section id="removedor">
+            <div id="removeSpaces">
+                <span>Removedor de Caracteres</span>
+                <input id="content" placeholder="Clique para copiar" readonly/><br>                
+                <input id="send-rm" type="text" autocomplete="off" placeholder="Coloque a numeração"><br>
+                <div class="block">
+                    <p>Caracteres:</p>
+                    <input id="length" type="text" placeholder="" value="0" readonly />
+                </div>
+                <div class="block">
+                    <p>Timer:</p>
+                    <input id="relogio" type="text" placeholder="" value="0" readonly />
+                </div>
+                <button id="button-rm" onclick="removeSpace()">Pressione</button>
+             </div>
+        </section>
+<!--
+        <section id="calculadora">
+            <div id="calculator">
+                <span>Calculadora Monofásica</span>  
+                <div id="seletor">       
+                <label for="valor">Selecione o Estado:</label>
+                <select id="valor">
+                    <option value="0">--</option>
+                    <option value="1.113168">AC</option>
+                    <option value="1.11272">AL</option>
+                    <option value="1.110816">AM</option>
+                    <option value="1.111376">AP</option>
+                    <option value="1.113168">BA</option>
+                    <option value="1.111824">CE</option>
+                    <option value="1.116304">DF</option>
+                    <option value="1.113616">ES</option>
+                    <option value="1.114064">GO</option>
+                    <option value="1.110816">MA</option>
+                    <option value="1.116304">MG</option>
+                    <option value="1.113168">MS</option>
+                    <option value="1.112272">MT</option>
+                    <option value="1.111824">PA</option>
+                    <option value="1.11272">PB</option>
+                    <option value="1.11272">PE</option>
+                    <option value="1.110816">PI</option>
+                    <option value="1.11776">PR</option>
+                    <option value="1.114512">RJ</option>
+                    <option value="1.111376">RN</option>
+                    <option value="1.111376">RO</option>
+                    <option value="1.110368">RR</option>
+                    <option value="1.119104">RS</option>
+                    <option value="1.116752">SC</option>
+                    <option value="1.112272">SE</option>
+                    <option value="1.117312">SP</option>
+                    <option value="1.111824">TO</option>
+                </select>
+                </div>
+                <div>
+                    <label for="numero"></label>
+                    <input type="number" id="numero" min="0" placeholder="Litros">            
+                    <input type="text" id="resultado" placeholder="Valor ICMS"/>
+                </div>
+                <br>
+                <button class="button-calc" onclick="calcular()">Calcular</button>            
+            </div>
+            </section>
+        </section>
+    -->
+<!--Tabela CFOP-->
+        <section id="tables">
+            <div class="table-1">          
+                <table>
+                    <caption>CFOP e Grupos Fiscais</caption>
+                    <thead>
+                        <tr>
+                            <th>Tipo de Documento</th>
+                            <th>Operação Interna</th>
+                            <th>Operação Interestadual</th>
+                            <th>Grupo Fiscal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>NFP - Uso e Consumo</td>
+                        <td>1556<br>1407</td>
+                        <td>2556<br>2407</td>
+                        <td>2 - Despesa</td>
+                    </tr>
+                    <tr>
+                        <td>NFP - Peças Frota</td>
+                        <td>1126</td>
+                        <td>2126</td>
+                        <td>3 - Custo</td>
+                    </tr>
+                    <tr>
+                        <td>NFP - Combustível e Lubrificantes</td>
+                        <td>1653</td>
+                        <td>2653</td>
+                        <td>30 - Etanol / Gasolina<br>31 - Arla<br>32 - Diesel<br>38 - Lubrificantes</td>
+                    </tr>
+                    <tr>
+                        <td>CT - Serviço de Transporte</td>
+                        <td>1351</td>
+                        <td>2351</td>
+                        <td>2 - Despesa<br>3 - Custo</td>
+                    </tr>
+                    <tr>
+                        <td>NFK - Energia Elétrica</td>
+                        <td>1254</td>
+                        <td>2254</td>
+                        <td>4 - Energia Elétrica</td>
+                    </tr>
+                    <tr>
+                        <td>NFT e NFM - Serviço de Comunicação</td>
+                        <td>1304</td>
+                        <td>2304</td>
+                        <td>5 - Telecomunicação</td>
+                    </tr>
+                    <tr>
+                        <td>NFS - Serviço</td>
+                        <td>1933</td>
+                        <td>2933</td>
+                        <td>7 - Serviços Custo<br>8 - Serviços Despesa</td>
+                    </tr>
+                    <tr>
+                        <td>NFP - Ativo Imobilizado</td>
+                        <td>1551</td>
+                        <td>2551</td>
+                        <td>10 - Ativo Custo<br>11 - Ativo Despesa<br>24 - Ativo Veiculo ADM<br> 23 - Ativo Veiculo Frota</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+<!--Tabela CST-->
+            <div class="table-2">                
+                <table>
+                    <caption>Tabela Consolidada CST</caption>
+                    <thead>
+                        <tr>                                                
+                            <th colspan="3">Simples Nacional</th>
+                            <th>CST</th>
+                            <th>Tributação pelo ICMS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>                       
+                            <td>0101</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="cst-col">00</td>
+                            <td>Tributada Integralmente</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="cst-col">10</td>
+                            <td>Tributada e com cobrança do ICMS por substituição tributária</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="cst-col">20</td>
+                            <td>Redução de base de cálculo</td>
+                        </tr>
+                        <tr>
+                            <td>0203</td>
+                            <td>0202</td>
+                            <td></td>
+                            <td class="cst-col">30</td>
+                            <td>Isenta ou não tributada e com cobrança do ICMS por <STr></STr></td>
+                        </tr>
+                        <tr>
+                            <td>0103</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="cst-col">40</td>
+                            <td>Isenta</td>
+                        </tr>
+                        <tr>
+                            <td>0102</td>
+                            <td>0300</td>
+                            <td>0400</td>
+                            <td class="cst-col">41</td>
+                            <td>Não tributada</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="cst-col">50</td>
+                            <td>Suspensão</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="cst-col">51</td>
+                            <td>Diferimento</td>
+                        </tr>
+                        <tr>
+                            <td>0500</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="cst-col">60</td>
+                            <td>ICMS cobrado anteriormente por substituição tributária</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="cst-col">70</td>
+                            <td>Redução da base de cálculo e cobrança do ICMS por ST</td>
+                        </tr>
+                        <tr>
+                            <td>0900</td>
+                            <td>-</td>
+                            <td>0201</td>
+                            <td class="cst-col">90</td>
+                            <td>Outras</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+<!--Tabela Regras CST-->
+            <section class="table-3">
+                <table>
+                    <caption>Regras Para Custo (1126 - 2126)</caption>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nota fiscal com CST <b>00 / 10 / 20 / 70 </b>alterar para <b>41</b></td>
+                        </tr>
+                        <tr>                        
+                            <td>Demais CST seguir conforme NF</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>Regras Para Uso e Consumo (1556 / 2556)</caption>
+                        <thead>
+                            <tr>
+                                <th>Descrição</th>
+                                <th>CFOP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Para esses CFOPs na NF(5401, 5403, 5405 e 5106) o CST sempre será 60</td>
+                                <td>1407 / 2407</td>
+                            </tr>
+                            <tr>
+                                <td>Nota fiscal com CST <b>30 / 40 / 41 / 50 / 51 / 90 </b>seguir NF</td>
+                                <td>1556 / 2556</td>
+                            </tr>
+                            <tr>
+                                <td>Nota fiscal com CST <b>00 / 10 / 20 / 70 alterar para <b>90</b></b></td>
+                                <td>1556 / 2556</td>
+                            </tr>
+                        </tbody>               
+                </table>
+                <table>
+                    <caption>Regras Para Ativo Imobilizado (1551 / 2551)</caption>
+                        <thead>
+                            <tr>
+                                <th>Descrição</th>
+                                <th>CFOP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CST <b>60</b> alterar para esses CFOP</td>
+                                <td>1406 / 2406</td>
+                            </tr>
+                            <tr>
+                                <td>Nota fiscal com CST <b>00 / 10 / 20 </b>alterar para 90</td>
+                                <td>1551 / 2551</td>
+                            </tr>
+                        </tbody>
+                    </table>
+<!--Tabela Emissão de Notas-->
+                    <table>
+                        <caption>Emissão de Notas Fiscais</caption>
+                        <thead>                    
+                            <tr>
+                                <th>Tipo de Operação</th>
+                                <th>Código de Operação</th>
+                                <th>Dentro do Estado</th>
+                                <th>Fora do Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Venda</td>      
+                                <td>181</td>      
+                                <td>5102</td>      
+                                <td>6102</td>
+                            </tr>
+                            <tr>
+                                <td>Remessa para Conserto</td>      
+                                <td>1061</td>      
+                                <td>5915</td>      
+                                <td>6915</td>
+                            </tr>
+                            <tr>
+                                <td>Simples Remessa</td>      
+                                <td>202</td>      
+                                <td>5949</td>      
+                                <td>6949</td>
+                            </tr>
+                            <tr>
+                                <td>Devolução Peças</td>      
+                                <td>325</td>      
+                                <td>5210</td>      
+                                <td>6210</td>
+                            </tr>
+                            <tr>
+                                <td>Devolução Comodato</td>      
+                                <td>625</td>      
+                                <td>5909</td>      
+                                <td>6909</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Portal Recebimento Fiscal. Todos os direitos reservados - Desenvolvido por Misael Gomes</p>
+    </footer>
+
+ <!--JS Removedor de espaço-->   
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+</body>
+</html>

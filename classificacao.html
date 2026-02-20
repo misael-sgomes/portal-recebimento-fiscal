@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="shortcut icon" href="./imagens/logoic.ico" type="image/x-icon">   
+    <title>Classificação</title>
+</head>
+<body>
+    <header>
+        <nav  class="menu">
+            <span>Portal Recebimento Fiscal</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="filial.html">Filial</a></li>
+                <li><a href="classificacao.html">Classificação</a></li>
+            </ul>
+            <img class="logo-ic" src="./imagens/ictransportes.png" alt="IC Transportes">
+        </nav>
+    </header>
+
+<main>
+    <section id="seletor-class">
+        <h2>Classificação Contábil</h2>
+        <label for="tabelas">Selecione uma tabela:</label>
+        <select id="tabelas" onchange="mostrarTabela()">
+            <option value="tabela1">Custo</option>
+            <option value="tabela2">Despesa</option>
+            <option value="tabela3">Ativo</option>
+        </select>
+    </section>
+     
+    <!--Custo-->
+    <section id="tabela1">
+        <!--Classificação Sintetica 3 - Combustiveis-->
+        <section>  
+            <table>      
+                <thead> 
+                    <caption>Classificação Sintética 3 - Combustíveis</caption>                    
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>121</td>
+                        <td>Oleo Diesel Interno</td>
+                        <td>Combustível</td>
+                    </tr>
+                    <tr>
+                        <td>122</td>
+                        <td>Oleo Diesel Externo</td>
+                        <td>Combustível</td>
+                    </tr>
+                    <tr>
+                        <td>681</td>
+                        <td>Arla Externo</td>
+                        <td>Combustível</td>
+                    </tr>
+                    <tr>
+                        <td>845</td>
+                        <td>Arla Interno</td>
+                        <td>Combustível</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 4 - Custo Operacional da Frota-->
+        <section>
+            <table>
+                <thead>
+                    <caption>Classificação Sintética 4 - Custo Operacional da Frota</caption>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>480</td>
+                        <td>Despesas de Viagem - Diversas</td>
+                        <td>Despesas de Viagem</td>
+                    </tr>
+                    <tr>
+                        <td>1975</td>
+                        <td>Locação de Veículos - JSL - Cisao</td>
+                        <td>Locação de Veículos</td>
+                    </tr>
+                    <tr>
+                        <td>820</td>
+                        <td>Locação de Carretas</td>
+                        <td>Loacação de Carretas</td>
+                    </tr>
+                    <tr>
+                        <td>823</td>
+                        <td>Peças e Acessórios - Estoque</td>
+                        <td>Peças e Acessórios</td>
+                    </tr>
+                    <tr>
+                        <td>824</td>
+                        <td>Peças e Acessórios - Aplicação Direta</td>
+                        <td>Peças e Acessórios</td>
+                    </tr>
+                    <tr>
+                        <td>825</td>
+                        <td>Mão de Obra Manutenção</td>
+                        <td>Mão de Obras Terceiros</td>
+                    </tr>
+                    <tr>
+                        <td>750</td>
+                        <td>Peças Para Manutenção de Equipamentos</td>
+                        <td>MAterial P/ Uso do Setor</td>
+                    </tr>
+                    <tr>
+                        <td>746</td>
+                        <td>Disposição de Resíduos | Lixo</td>
+                        <td>Serviços Disposição de Resíduos</td>
+                    </tr>
+                    <tr>
+                        <td>756</td>
+                        <td>Limpeza Externa Frota - Estética</td>
+                        <td>Limpeza Externa Frota</td>
+                    </tr>
+                    <tr>
+                        <td>779</td>
+                        <td>Acidente - Peças</td>
+                        <td>Peças e Acessórios</td>
+                    </tr>
+                    <tr>
+                        <td>645</td>
+                        <td>Mão de Obra Externa - Pessoa Física</td>
+                        <td>Mão de Obra Externa - PF</td>
+                    </tr>
+                    <tr>
+                        <td>680</td>
+                        <td>Assesoria Para Carregamento - PJ</td>
+                        <td>Serviços Prestados - PJ</td>
+                    </tr>
+                    <tr>
+                        <td>683</td>
+                        <td>Acessorios Frota - Tacografo</td>
+                        <td>Peças e Acessórios</td>
+                    </tr>
+                    <tr>
+                        <td>737</td>
+                        <td>Materiais p/ Uso do Setor</td>
+                        <td>Material P/ Uso do Setor</td>
+                    </tr>
+                    <tr>
+                        <td>740</td>
+                        <td>Locação de Equipamentos</td>
+                        <td>Locação de Equipamentos</td>
+                    </tr>
+                    <tr>
+                        <td>743</td>
+                        <td>Prestação de Serviços - Setores</td>
+                        <td>Serviços Prestados - PJ</td>
+                    </tr>
+                    <tr>
+                        <td>721</td>
+                        <td>Locação de Cameras</td>
+                        <td>Locação de Equipamentos</td>
+                    </tr>
+                    <tr>
+                        <td>502</td>
+                        <td>Peças para frota (Veiculos Novos)</td>
+                        <td>Peças e Acessórios</td>
+                    </tr>
+                    <tr>
+                        <td>465</td>
+                        <td>Estacionamento Frota - Cupom Fiscal</td>
+                        <td>Despesas de Viagem</td>
+                    </tr>
+                    <tr>
+                        <td>470</td>
+                        <td>Limpeza Externa Frota - Carregamento</td>
+                        <td>limpeza Externa Frota</td>
+                    </tr>
+                    <tr>
+                        <td>539</td>
+                        <td>Frete de Fornecedores</td>
+                        <td>Fretes e Carretos</td>
+                    </tr>
+                    <tr>
+                        <td>588</td>
+                        <td>Estacionamento Frota - Contrato</td>
+                        <td>Estacionamento</td>
+                    </tr>
+                    <tr>
+                        <td>591</td>
+                        <td>Compra Pneus</td>
+                        <td>Pneus</td>
+                    </tr>
+                    <tr>
+                        <td>127</td>
+                        <td>Peças e Acessórios</td>
+                        <td>Peças e Acessórios</td>
+                    </tr>
+                    <tr>
+                        <td>128</td>
+                        <td>Mão de Obra Externa - PJ</td>
+                        <td>Mão de Obra Terceiros</td>
+                    </tr>
+                    <tr>
+                        <td>129</td>
+                        <td>Socorro</td>
+                        <td>Socorro Frota</td>
+                    </tr>
+                    <tr>
+                        <td>130</td>
+                        <td>Acidente - Serviços</td>
+                        <td>Assistencia da Frota</td>
+                    </tr>
+                    <tr>
+                        <td>131</td>
+                        <td>Lubrificantes | Graxas - Aplicação Direta</td>
+                        <td>Lubrificantes</td>
+                    </tr>
+                    <tr>
+                        <td>135</td>
+                        <td>Pedágio</td>
+                        <td>Pedágio</td>
+                    </tr>
+                    <tr>
+                        <td>136</td>
+                        <td>Contratos de Manutenção</td>
+                        <td>Mão de Obra Terceiros</td>
+                    </tr>
+                    <tr>
+                        <td>137</td>
+                        <td>Pneus (Carretas Novas)</td>
+                        <td>Pneus e Borracharia</td>
+                    </tr>
+                    <tr>
+                        <td>138</td>
+                        <td>Recapagens</td>
+                        <td>Pneus e Borracharia</td>
+                    </tr>
+                    <tr>
+                        <td>1936</td>
+                        <td>Recapagens - Ressolados</td>
+                        <td>Pneus e Borracharia</td>
+                    </tr>
+                    <tr>
+                        <td>141</td>
+                        <td>Produtos para ETA</td>
+                        <td>Material Para Uso E.T.A</td>
+                    </tr>
+                    <tr>
+                        <td>143</td>
+                        <td>Materiais Para Uso nos Setores</td>
+                        <td>Oficina</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 6 - Custo Administrativo da Frota-->
+        <section>
+            <table>
+                <thead>        
+                    <caption>Classificação Sintética 6 - Custo Administrativo da Frota</caption>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>648</td>
+                        <td>Assessoria e Consultoria</td>
+                        <td>Serviços Prestados - PJ</td>
+                    </tr>
+                    <tr>
+                        <td>546</td>
+                        <td>Rastreamento - Peças</td>
+                        <td>Peças e Acessórios</td>
+                    </tr>
+                    <tr>
+                        <td>152</td>
+                        <td>Licenciamento</td>
+                        <td>Licenciamento Frota</td>
+                    </tr>
+                    <tr>
+                        <td>155</td>
+                        <td>Despachante</td>
+                        <td>Serviços Despachante</td>
+                    </tr>
+                    <tr>
+                        <td>156</td>
+                        <td>Rastreamentos - Serviços</td>
+                        <td>Serviços Rastreamento</td>
+                    </tr>
+                    <tr>
+                        <td>157</td>
+                        <td>Vistorias</td>
+                        <td>Vistorias</td>
+                    </tr>
+                    <tr>
+                        <td>158</td>
+                        <td>Capacitação</td>
+                        <td>Capacitação</td>
+                    </tr>
+                    <tr>
+                        <td>160</td>
+                        <td>Assessoria p/ Emergência</td>
+                        <td>Assistência da Frota</td>
+                    </tr>
+                    <tr>
+                        <td>161</td>
+                        <td>Comissões de Representantes - PJ</td>
+                        <td>Serviços Prestados - PJ</td>
+                    </tr>
+                    <tr>
+                        <td>791</td>
+                        <td>Emplacamento</td>
+                        <td>Licenciamento Frota</td>
+                    </tr>
+                    <tr>
+                        <td>792</td>
+                        <td>Despachante - Taxas</td>
+                        <td>Licenciamento Frota</td>
+                    </tr>
+                    <tr>
+                        <td>862</td>
+                        <td>Capacitação (Ipem/Cronotacografo)</td>
+                        <td>Capacitação</td>
+                    </tr>
+                    <tr>
+                        <td>896</td>
+                        <td>Comissoes de Representantes - Operação</td>
+                        <td>Serviços Prestados - PJ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 7 - Despesas Administrativas-->
+        <section>
+            <table>
+                <thead>
+                    <caption>Classificação Sintética 7 - Despesas Administrativas</caption>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>185</td>
+                        <td>Serviços Prestados - PX</td>
+                        <td>Serviços Prestados - PJ</td>
+                    </tr>
+                    <tr>
+                        <td>535</td>
+                        <td>Limpeza e Conservação</td>
+                        <td>Limpeza e Conservação</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 21 - Custo Transporte Terceiros-->
+        <section>
+                <table>
+                <thead>
+                    <caption>Classificação Sintética 21 - Custo Transporte Terceiros</caption>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>347</td>
+                        <td>Fretes Terceiros - Fisica</td>
+                        <td>Carreteiros</td>
+                    </tr>
+                    <tr>
+                        <td>348</td>
+                        <td>Fretes Terceiros - Jurídica</td>
+                        <td>Fretes e Carretos - Jurídica</td>
+                    </tr>
+                    <tr>
+                        <td>677</td>
+                        <td>Prestação de Serviços - Terceiros</td>
+                        <td>Serviços Prestados - PJ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 22 - Seguros-->
+        <section>
+                <table>
+                <thead>
+                    <caption>Classificação Sintética 22 - Seguros</caption>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>517</td>
+                        <td>Despesas Operacionais C/ Sinistro</td>
+                        <td>Snistro</td>
+                    </tr>
+                    <tr>
+                        <td>518</td>
+                        <td>Seguro Carros Apoio</td>
+                        <td>Seguros</td>
+                    </tr>
+                    <tr>
+                        <td>353</td>
+                        <td>Carga - RCTR-C</td>
+                        <td>Seguros</td>
+                    </tr>
+                    <tr>
+                        <td>354</td>
+                        <td>Carga - RCF</td>
+                        <td>Seguros</td>
+                    </tr>
+                    <tr>
+                        <td>357</td>
+                        <td>Seguro Casco</td>
+                        <td>Seguros</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>        
+        <!--Classificação Sintética 27 - Despesas com Viagens e Frota Aux-->
+        <section>
+                <table>
+                <thead>
+                    <caption>Classificação Sintética 27 - Despesas com Viagens e Frota Aux</caption>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>774</td>
+                        <td>Despesas a Reembolsar - Mão de Obra Externa</td>
+                        <td>Mão de Obra - Terceiros</td>
+                    </tr>
+                    <tr>
+                        <td>770</td>
+                        <td>Despesas a Reembolsar - CIV/CIPP</td>
+                        <td>Capacitação</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 34 - Custos/Despesas - Estoque-->
+        <section>
+                <table>
+                <thead>
+                    <caption>Classificação Sintética 34 - Custos/Despesas - Estoque</caption>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1000</td>
+                        <td>Suprimentos/Acessórios - Estoque TI</td>
+                        <td>Estoque - Suprimentos/Acessórios - TI</td>
+                    </tr>
+                    <tr>
+                        <td>902</td>
+                        <td>Papelaria - Estoque</td>
+                        <td>Papelaria</td>
+                    </tr>
+                    <tr>
+                        <td>903</td>
+                        <td>Uniformes - Estoque</td>
+                        <td>Uniformes</td>
+                    </tr>
+                    <tr>
+                        <td>904</td>
+                        <td>EPI - Estoque</td>
+                        <td>Equipamentos de Segurança</td>
+                    </tr>
+                    <tr>
+                        <td>905</td>
+                        <td>EPC - Estoque</td>
+                        <td>Equipamentos de Segurança</td>
+                    </tr>
+                    <tr>
+                        <td>906</td>
+                        <td>Materiais Uso Setor - Estoque</td>
+                        <td>Materiais Para Uso dos Setores</td>
+                    </tr>
+                    <tr>
+                        <td>907</td>
+                        <td>Material Lavador - Estoque</td>
+                        <td>Material Lavador</td>
+                    </tr>
+                    <tr>
+                        <td>908</td>
+                        <td>Peças P/ Frota - Estoque</td>
+                        <td>Peças</td>
+                    </tr>
+                    <tr>
+                        <td>909</td>
+                        <td>Lubrificantes P/ Frota - Estoque</td>
+                        <td>Lubrificantes/Graxas</td>
+                    </tr>
+                    <tr>
+                        <td>995</td>
+                        <td>Borracharia Peças - Estoque</td>
+                        <td>Borracharia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+    <!--Despesa-->
+    <section id="tabela2">
+        <!--Classificação Sintética 4 - Custo Operacional da Frota-->
+        <section>
+            <table>
+                <thead>
+                    <caption>Classificação Sintética 4 - Custo Operacional da Frota</caption>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>
+                    </tr>           
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>503</td>
+                        <td>Analise Técnica de Produtos</td>
+                        <td>Despesas Diversas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 6 - Custo Administrativo da Frota-->
+        <section>
+            <table>
+                <thead>
+                    <caption>Classificação Sintética 6 - Custo Administrativo da Frota</caption>            
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>649</td>
+                        <td>Comissões de Representantes - PF</td>
+                        <td>Despesas com Frota</td>
+                    </tr>
+                    <tr>
+                        <td>153</td>
+                        <td>Seguro Obrigatório</td>
+                        <td>IPVA e Seguro Obrigatório</td>
+                    </tr>
+                    <tr>
+                        <td>154</td>
+                        <td>IPVA</td>
+                        <td>IPVA e Seguro Obrigatório</td>
+                    </tr>
+                    <tr>
+                        <td>159</td>
+                        <td>Assessoria Técnica</td>
+                        <td>Despesas com Frota</td>
+                    </tr>
+                    <tr>
+                        <td>838</td>
+                        <td>IPVA - Anual</td>
+                        <td>IPVA a Apropriar</td>
+                    </tr>
+                    <tr>
+                        <td>857</td>
+                        <td>Est. Agregado - Licen/Doc (Não Usar)</td>
+                        <td>Reembolso de Despesas</td>
+                    </tr>
+                </tbody>
+            </table>      
+        </section>
+        <!--Classificação Sintética 7 - Despesas Administrativas-->
+        <section>
+            <table>
+                <thead>
+                    <caption>Classificação Sintética 7 - Despesas Administrativas</caption>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>882</td>
+                        <td>Assinatura TV - TI</td>
+                        <td>Assinaturas de Jornais e Revistas</td>
+                    </tr>
+                    <tr>
+                        <td>849</td>
+                        <td>Taxas Associações</td>
+                        <td>Taxas Diversas</td>
+                    </tr>
+                    <tr>
+                        <td>827</td>
+                        <td>Calibração Equipamentos</td>
+                        <td>Manutenção e Reparos</td>
+                    </tr>
+                    <tr>
+                        <td>831</td>
+                        <td>Projetos - Inovação</td>
+                        <td>Despesas com Projetos</td>
+                    </tr>
+                    <tr>
+                        <td>894</td>
+                        <td>Projetos</td>
+                        <td>Despesas com Projetos</td>
+                    </tr>
+                    <tr>
+                        <td>1923</td>
+                        <td>Condominio</td>
+                        <td>Aluguel de Imóveis</td>
+                    </tr>
+                    <tr>
+                        <td>165</td>
+                        <td>Aluguel - PJ</td>
+                        <td>Aluguel de Imóveis</td>
+                    </tr>
+                    <tr>
+                        <td>166</td>
+                        <td>Água</td>
+                        <td>Água</td>
+                    </tr>
+                    <tr>
+                        <td>167</td>
+                        <td>Energia Elétrica</td>
+                        <td>Energia Elétrica</td>
+                    </tr>
+                    <tr>
+                        <td>168</td>
+                        <td>Correios e Malotes</td>
+                        <td>Correios</td>
+                    </tr>
+                    <tr>
+                        <td>169</td>
+                        <td>Cartório / Cópias</td>
+                        <td>Despesas de Cartório</td>
+                    </tr>
+                    <tr>
+                        <td>170</td>
+                        <td>Papelaria</td>
+                        <td>Material de Papelaria</td>
+                    </tr>
+                    <tr>
+                        <td>171</td>
+                        <td>Produto de Limpeza</td>
+                        <td>Material Limpeza / Higiene</td>
+                    </tr>
+                    <tr>
+                        <td>172</td>
+                        <td>Produto de Higiene</td>
+                        <td>Material Limpeza / Higiene</td>
+                    </tr>
+                    <tr>
+                        <td>173</td>
+                        <td>Copa e Cozinha</td>
+                        <td>Copa / Cozinha</td>
+                    </tr>
+                    <tr>
+                        <td>174</td>
+                        <td>Segurança Patrimonial</td>
+                        <td>Serviços Vigilância</td>
+                    </tr>
+                    <tr>
+                        <td>175</td>
+                        <td>Assinatura de Jornais, revistas e TV</td>
+                        <td>Assinaturas de Jornais e Revistas</td>
+                    </tr>
+                    <tr>
+                        <td>176</td>
+                        <td>Doações</td>
+                        <td>Doações</td>
+                    </tr>
+                    <tr>
+                        <td>178</td>
+                        <td>Telefonia Fixa</td>
+                        <td>Telefones</td>
+                    </tr>
+                    <tr>
+                        <td>179</td>
+                        <td>Telefonia Móvel</td>
+                        <td>Telefones</td>
+                    </tr>
+                    <tr>
+                        <td>180</td>
+                        <td>Farmácia</td>
+                        <td>Despesa com Farmácia</td>
+                    </tr>
+                    <tr>
+                        <td>181</td>
+                        <td>Serviços de Patrulheiro</td>
+                        <td>Serviços de Profissionais Internos</td>
+                    </tr>
+                    <tr>
+                        <td>184</td>
+                        <td>Serviços  de Motoboy</td>
+                        <td>Serviçoes de Motoboy</td>
+                    </tr>
+                    <tr>
+                        <td>186</td>
+                        <td>Disposição de Resíduos / Lixo</td>
+                        <td>Resíduos / Lixos</td>
+                    </tr>
+                    <tr>
+                        <td>188</td>
+                        <td>Fretes de Fornecedores</td>
+                        <td>Despesa com Transportes DV</td>
+                    </tr>
+                    <tr>
+                        <td>190</td>
+                        <td>Diversas</td>
+                        <td>Despesas Diversas</td>
+                    </tr>
+                    <tr>
+                        <td>192</td>
+                        <td>Meio Ambiente - Documentação</td>
+                        <td>Despesas Diversas</td>
+                    </tr>
+                    <tr>
+                        <td>535</td>
+                        <td>Limpeza e Conservação</td>
+                        <td>Limpeza e Conservação</td>
+                    </tr>
+                    <tr>
+                        <td>555</td>
+                        <td>Comunicação Visual/MKT</td>
+                        <td>Serviços Propaganda e Marketing</td>
+                    </tr>
+                    <tr>
+                        <td>572</td>
+                        <td>Internet</td>
+                        <td>Internet</td>
+                    </tr>
+                    <tr>
+                        <td>514</td>
+                        <td>Despesas C/ Clientes e Fornecedores</td>
+                        <td>Despesas Comerciais e Diversas</td>
+                    </tr>
+                    <tr>
+                        <td>684</td>
+                        <td>Locação de Equipamentos</td>
+                        <td>Aluguel Maquinas e Equipamentos</td>
+                    </tr>
+                    <tr>
+                        <td>659</td>
+                        <td>Aluguel PF</td>
+                        <td>Aluguel de Imóveis</td>
+                    </tr>
+                    <tr>
+                        <td>708</td>
+                        <td>Serviços de Motoboy - PF</td>
+                        <td>Serviços de Motoboy</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 9 - Segurança Patrimonial-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 9 - Segurança Patrimonial</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>                        
+                    <tr>
+                        <td>864</td>
+                        <td>Prestação de Serviços - Patrimonial</td>
+                        <td>Serviços Vigilancia</td>
+                    </tr>
+                    <tr>
+                        <td>865</td>
+                        <td>Manutenção de Equipamentos - Patrimonial</td>
+                        <td>Manutenção e Reparos</td>
+                    </tr>
+                    <tr>
+                        <td>336</td>
+                        <td>Material de Segurança Predial</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 9 - Segurança Patrimonial-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 9 - Segurança Patrimonial</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>256</td>
+                        <td>Associações</td>
+                        <td>Mensalidade Associação</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 15 - Informática-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 15 - Informática</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>      
+                    </tr>
+                </thead>
+                <tbody>            
+                    <tr>
+                        <td>283</td>
+                        <td>Manutenção</td>
+                        <td>Serviço de Informática</td>
+                    </tr>
+                    <tr>
+                        <td>284</td>
+                        <td>Suprimentos / Acessórios</td>
+                        <td>Material de Informática</td>
+                    </tr>
+                    <tr>
+                        <td>286</td>
+                        <td>Consultoria Técnica</td>
+                        <td>Serviço de Informática</td>
+                    </tr>          
+                    <tr>
+                        <td>287</td>
+                        <td>Mensalidade Software</td>
+                        <td>Software / Internet</td>
+                    </tr>        
+                    <tr>
+                        <td>289</td>
+                        <td>Locação de Equipamentos de Informática</td>
+                        <td>Alguel Maquinas e Equipamentos</td>
+                    </tr>
+                    <tr>
+                        <td>879</td>
+                        <td>Prestação de Serviços - Patrimonial</td>
+                        <td>Serviço de Informática</td>
+                    </tr>
+                    <tr>
+                        <td>880</td>
+                        <td>Consultoria Técnica - TI</td>
+                        <td>Serviço de Informática</td>
+                    </tr>
+                    <tr>
+                        <td>881</td>
+                        <td>Mensalidade SOftware - TI</td>
+                        <td>Software / Internet</td>
+                    </tr>          
+                    <tr>
+                        <td>883</td>
+                        <td>Locação de Equipamentos de Informática - TI</td>
+                        <td>Alguel Maquinas e Equipamentos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 17 - Benefícios a Funcionários-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 17 - Benefícios a Funcionários</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>312</td>
+                        <td>Convenio Médico</td>
+                        <td>Assistencia Médica</td>
+                    </tr>
+                    <tr>
+                        <td>313</td>
+                        <td>Vale Transportes</td>
+                        <td>Vale Transporte</td>
+                    </tr>
+                    <tr>
+                        <td>314</td>
+                        <td>Seguros de Vida em Grupo</td>
+                        <td>Seguros de Vida em Grupo</td>
+                    </tr>          
+                    <tr>
+                        <td>315</td>
+                        <td>Vale Alimentação</td>
+                        <td>Vale Alimentação</td>
+                    </tr>        
+                    <tr>
+                        <td>318</td>
+                        <td>Premiação Semestral</td>
+                        <td>Despesas com Funcionários</td>
+                    </tr>
+                    <tr>
+                        <td>319</td>
+                        <td>Vale Refeição</td>
+                        <td>Vale Refeição</td>
+                    </tr>
+                    <tr>
+                        <td>715</td>
+                        <td>Exames Periodicos</td>
+                        <td>Exames Periodicos</td>
+                    </tr>
+                    <tr>
+                        <td>682</td>
+                        <td>Hospedagem / Passagens Funcionários</td>
+                        <td>Conduções e Hospedagem</td>
+                    </tr>          
+                    <tr>
+                        <td>593</td>
+                        <td>Convênio Odontologico</td>
+                        <td>Assistência Odontologica</td>
+                    </tr>
+                    <tr>
+                        <td>483</td>
+                        <td>Combustivel Funcionário</td>
+                        <td>Combustível Frota Aux</td>
+                    </tr>
+                    <tr>
+                        <td>858</td>
+                        <td>Est Agregado - Uniforme (Não Usar)</td>
+                        <td>Reembolso de Despesas</td>
+                    </tr>
+                    <tr>
+                        <td>876</td>
+                        <td>Treinamento e Cursos - PDI</td>
+                        <td>Treinamento e Cursos</td>
+                    </tr>          
+                    <tr>
+                        <td>870</td>
+                        <td>Exame Toxicologico</td>
+                        <td>Exames Periódicos</td>
+                    </tr>        
+                    <tr>
+                        <td>893</td>
+                        <td>Faculdades / MBA / Outros</td>
+                        <td>Treinamentos e Cursos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 19 - Manutenção Predial-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 19 - Manutenção Predial</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>332</td>
+                        <td>Prestação de Serviços</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                    <tr>
+                        <td>333</td>
+                        <td>Material Elétrico</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                    <tr>
+                        <td>334</td>
+                        <td>Material de Construção</td>
+                        <td>Manutenção Predial</td>
+                    </tr>          
+                    <tr>
+                        <td>335</td>
+                        <td>Licenças Ambientais</td>
+                        <td>Manutenção e Reparos</td>
+                    </tr>        
+                    <tr>
+                        <td>556</td>
+                        <td>Dedetização</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                    <tr>
+                        <td>471</td>
+                        <td>Obra Rondonopolis</td>
+                        <td>Despesas</td>
+                    </tr>
+                    <tr>
+                        <td>506</td>
+                        <td>Material Hidraulico</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                    <tr>
+                        <td>716</td>
+                        <td>AVCB - Serviços</td>
+                        <td>Manutenção Predial</td>
+                    </tr>          
+                    <tr>
+                        <td>744</td>
+                        <td>AVCB - Materiais</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                    <tr>
+                        <td>612</td>
+                        <td>Manutenção Predial</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                    <tr>
+                        <td>826</td>
+                        <td>Testes Estanquiedade</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                    <tr>
+                        <td>767</td>
+                        <td>Manutenção de Equipamentos</td>
+                        <td>Manutenção e Reparos</td>
+                    </tr>          
+                    <tr>
+                        <td>759</td>
+                        <td>Benfeitorias</td>
+                        <td>Manutenção Predial</td>
+                    </tr>        
+                    <tr>
+                        <td>760</td>
+                        <td>Manutenção Patio</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                    <tr>
+                        <td>863</td>
+                        <td>Manutenção de Móveis e Utensílios</td>
+                        <td>Manutenção e Reparos</td>
+                    </tr>
+                    <tr>
+                        <td>1920</td>
+                        <td>Limpeza Caixa D'Água</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                    <tr>
+                        <td>1921</td>
+                        <td>Teste de Qualidade Água</td>
+                        <td>Manutenção Predial</td>
+                    </tr>          
+                    <tr>
+                        <td>1922</td>
+                        <td>Inspeção Compressores</td>
+                        <td>Manutenção Predial</td>
+                    </tr>        
+                    <tr>
+                        <td>1926</td>
+                        <td>Descarte Lodo/Contaminado</td>
+                        <td>Manutenção Predial</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 20 - Ampliação e Aquisição de Patrimônio-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 20 - Ampliação e Aquisição de Patrimônio</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>341</td>
+                        <td>Ampliação Lavador</td>
+                        <td>Benfeitorias Propriedade Alugada</td>
+                    </tr>
+                    <tr>
+                        <td>342</td>
+                        <td>Construção Filial Catalão</td>
+                        <td>Benfeitorias Propriedade Alugada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 22 - Seguros-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 22 - Seguros</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>839</td>
+                        <td>Seguro Contra Terceiros - Frota Anual</td>
+                        <td>Seguros a Apropriar</td>
+                    </tr>
+                    <tr>
+                        <td>850</td>
+                        <td>Seguro Carros Apoio - Anual</td>
+                        <td>Seguros a Apropriar</td>
+                    </tr>
+                    <tr>
+                        <td>489</td>
+                        <td>Vida</td>
+                        <td>Seguros</td>
+                    </tr>          
+                    <tr>
+                        <td>527</td>
+                        <td>Prejuizos</td>
+                        <td>Reembolso de Despesas</td>
+                    </tr>        
+                    <tr>
+                        <td>355</td>
+                        <td>Seguro Predial</td>
+                        <td>Seguros</td>
+                    </tr>
+                    <tr>
+                        <td>356</td>
+                        <td>Seguro Contra Terceiros - Frota</td>
+                        <td>Seguros a Apropriar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 24 - Multas-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 24 - Multas</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>368</td>
+                        <td>Multas de Trânsito - Frota</td>
+                        <td>Multas de Trânsito</td>
+                    </tr>
+                    <tr>
+                        <td>370</td>
+                        <td>Multas Fiscais</td>
+                        <td>Multas Contratuais</td>
+                    </tr>
+                    <tr>
+                        <td>371</td>
+                        <td>Multas de Terceiros</td>
+                        <td>Multas de Trânsito</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 26 - Processos Trabalhistas / Civeis-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 26 - Processos Trabalhistas / Civeis</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>387</td>
+                        <td>Reembolso de Despesas</td>
+                        <td>Serviçoes Advogados</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 27 - Despesas com Viagens e Frota Aux-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 27 - Despesas com Viagens e Frota Aux</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>848</td>
+                        <td>Avarias Veículos de Apoio - Custo IC</td>
+                        <td>Despesas C/ Veículos</td>
+                    </tr>
+                    <tr>
+                        <td>840</td>
+                        <td>Despesas de Viagens/Treinamentos</td>
+                        <td>Despesas Viagens / Treinamentos</td>
+                    </tr>
+                    <tr>
+                        <td>392</td>
+                        <td>Hotéis</td>
+                        <td>Conduções e Hospedagem</td>
+                    </tr>
+                    <tr>
+                        <td>393</td>
+                        <td>Passagens</td>
+                        <td>Conduções e Hospedagem</td>
+                    </tr>
+                    <tr>
+                        <td>394</td>
+                        <td>Refeições</td>
+                        <td>Refeições e Lanches</td>
+                    </tr>
+                    <tr>
+                        <td>395</td>
+                        <td>Estacionamentos</td>
+                        <td>Despesas Viagens</td>
+                    </tr>
+                    <tr>
+                        <td>397</td>
+                        <td>Aluguel de Automóveis</td>
+                        <td>Despesas Viagens</td>
+                    </tr>
+                    <tr>
+                        <td>398</td>
+                        <td>Pedágio Frota Auxiliar</td>
+                        <td>Despesas Viagens</td>
+                    </tr>
+                    <tr>
+                        <td>419</td>
+                        <td>Despesas Comerciais e Diversas</td>
+                        <td>Despesas Comerciais e Diversas</td>
+                    </tr>
+                    <tr>
+                        <td>678</td>
+                        <td>IPVA / Seguro Obrigatório</td>
+                        <td>IPVA e Seguro Obrigatório</td>
+                    </tr>
+                    <tr>
+                        <td>396</td>
+                        <td>Combustíveis</td>
+                        <td>Combustível</td>
+                    </tr>
+                    <tr>
+                        <td>402</td>
+                        <td>Óleo e Lubrificantes - Frota Apoio</td>
+                        <td>Lubrificantes</td>
+                    </tr>
+                    <tr>
+                        <td>403</td>
+                        <td>Consertos e Manutenção Veículos</td>
+                        <td>Mão de Obra - Terceiros</td>
+                    </tr>
+                    <tr>
+                        <td>521</td>
+                        <td>Peças / Acessórios</td>
+                        <td>Peças e Acessórios</td>
+                    </tr>
+                    <tr>
+                        <td>524</td>
+                        <td>Limpeza Veículos de Apoio</td>
+                        <td>Limpeza Externa Frota</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 30 - Consultorias-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 30 - Consultorias</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>655</td>
+                        <td>Consutloria Diversas - Pessoa Fisica</td>
+                        <td>Serviços Consultoria - PF</td>
+                    </tr>
+                    <tr>
+                        <td>735</td>
+                        <td>Consultoria - Licenciamento Ambiental PJ</td>
+                        <td>Serviçoes Assessoria Tributária</td>
+                    </tr>
+                    <tr>
+                        <td>718</td>
+                        <td>Consultoria - Pericia Medica - PJ</td>
+                        <td>Serviçoes Medicina do Trabalho - Pericia</td>
+                    </tr>
+                    <tr>
+                        <td>600</td>
+                        <td>Consultoria, Agenciam, Corret ou Inter</td>
+                        <td>Serviços Auditoria / Consultoria</td>
+                    </tr>
+                    <tr>
+                        <td>586</td>
+                        <td>Consultoria RH</td>
+                        <td>Serviços Recrutamento e Seleção</td>
+                    </tr>
+                    <tr>
+                        <td>424</td>
+                        <td>Assistência Contábil / Fiscal</td>
+                        <td>Serviçoes Assessoria Tributária</td>
+                    </tr>
+                    <tr>
+                        <td>425</td>
+                        <td>Certificações SASSMAQ / ISO</td>
+                        <td>Serviçoes Auditoria / Consultoria</td>
+                    </tr>
+                    <tr>
+                        <td>426</td>
+                        <td>Assistência Jurídica</td>
+                        <td>Serviços Advogados</td>
+                    </tr>
+                    <tr>
+                        <td>427</td>
+                        <td>Assistência Psicológica</td>
+                        <td>Assistencia Psicológica</td>
+                    </tr>
+                    <tr>
+                        <td>768</td>
+                        <td>Consultoria - Periciar Médica - PF</td>
+                        <td>Serviços Consultoria - PF</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 32 - Despesas a Reembolsar-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 32 - Despesas a Reembolsar</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>   
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>695</td>
+                        <td>Despesas a Reembolsar - Diversas</td>
+                        <td>Reembolso de Despesas</td>
+                    </tr>
+                    <tr>
+                        <td>771</td>
+                        <td>Despesas a Reembolsar - Multas</td>
+                        <td>Multas de Trânsito</td>
+                    </tr>
+                    <tr>
+                        <td>772</td>
+                        <td>Despesas a Reembolsar - Hosped / Conduções</td>
+                        <td>Conduções e Hospedagem</td>
+                    </tr>
+                    <tr>
+                        <td>1955</td>
+                        <td>Despesas a Reembolsar - Taxi e Uber</td>
+                        <td>Conduções e Hospedagem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 33 - Restaurante-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 33 - Restaurante</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>773</td>
+                        <td>Reposição de Utensílios</td>
+                        <td>Materiais Auxiliares de Cons</td>
+                    </tr>
+                    <tr>
+                        <td>751</td>
+                        <td>Descartaveis</td>
+                        <td>Refeições Internas</td>
+                    </tr>
+                    <tr>
+                        <td>752</td>
+                        <td>Produtos de Limpeza</td>
+                        <td>Material Limpeza / Higiene</td>
+                    </tr>
+                    <tr>
+                        <td>753</td>
+                        <td>Matéria Prima</td>
+                        <td>Refeições Internas</td>
+                    </tr>
+                    <tr>
+                        <td>754</td>
+                        <td>Prestação de Serviços</td>
+                        <td>Serviços Diversos</td>
+                    </tr>
+                    <tr>
+                        <td>755</td>
+                        <td>Equipamentos de Segurança - Despesa</td>
+                        <td>Equipamento de Segurança - EPI</td>
+                    </tr>
+                    <tr>
+                        <td>182</td>
+                        <td>Gás</td>
+                        <td>Copa / Cozinha</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 25 - Aquisição de Ativo-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 25 - Aquisição de Ativo</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>461</td>
+                        <td>Bens não Imobilizados</td>
+                        <td>Bens não Imobilizados</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 34 - Custos/Despesas - Estoque-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 34 - Custos/Despesas - Estoque</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1000</td>
+                        <td>Suprimentos/Acessórios - Estoque TI</td>
+                        <td>Estoque - Suprimentos/Acessórios - TI</td>
+                    </tr>
+                    <tr>
+                        <td>902</td>
+                        <td>Papelaria - Estoque</td>
+                        <td>Papelaria</td>
+                    </tr>
+                    <tr>
+                        <td>903</td>
+                        <td>Uniformes - Estoque</td>
+                        <td>Uniformes</td>
+                    </tr>
+                    <tr>
+                        <td>904</td>
+                        <td>EPI - Estoque</td>
+                        <td>Equipamentos de Segurança</td>
+                    </tr>
+                    <tr>
+                        <td>905</td>
+                        <td>EPC - Estoque</td>
+                        <td>Equipamentos de Segurança</td>
+                    </tr>
+                    <tr>
+                        <td>906</td>
+                        <td>Materiais Uso Setor - Estoque</td>
+                        <td>Materiais Para Uso dos Setores</td>
+                    </tr>
+                    <tr>
+                        <td>907</td>
+                        <td>Material Lavador - Estoque</td>
+                        <td>Material Lavador</td>
+                    </tr>
+                    <tr>
+                        <td>908</td>
+                        <td>Peças P/ Frota - Estoque</td>
+                        <td>Peças</td>
+                    </tr>
+                    <tr>
+                        <td>909</td>
+                        <td>Lubrificantes P/ Frota - Estoque</td>
+                        <td>Lubrificantes/Graxas</td>
+                    </tr>
+                    <tr>
+                        <td>995</td>
+                        <td>Borracharia Peças - Estoque</td>
+                        <td>Borracharia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 35 - Gastos com Pessoal-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 35 - Gastos com Pessoal</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1912</td>
+                        <td>Almoço e Lanches</td>
+                        <td>Refeições e Lanches</td>
+                    </tr>
+                    <tr>
+                        <td>1913</td>
+                        <td>Treinamentos e Cursos</td>
+                        <td>Treinamento e Cursos</td>
+                    </tr>
+                    <tr>
+                        <td>1914</td>
+                        <td>Brindes</td>
+                        <td>Despesas com Funcionários</td>
+                    </tr>
+                    <tr>
+                        <td>1915</td>
+                        <td>Eventos Funcionários</td>
+                        <td>Despesas com Funcionários</td>
+                    </tr>
+                    <tr>
+                        <td>1918</td>
+                        <td>Despesas C/ Funcionários</td>
+                        <td>Despesas com Funcionários</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+          </table>    
+    </section>
+    <!--Ativo-->
+    <section id="tabela3">
+        <!--Classificação Sintética 15 - Informática-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 15 - Informática</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>285</td>
+                        <td>Equipamentos</td>
+                        <td>Equipamentos de Process.dados</td>
+                    </tr>
+                    <tr>
+                        <td>511</td>
+                        <td>Aquisição Software</td>
+                        <td>Sistemas Aplicativos-Software</td>
+                    </tr>
+                    <tr>
+                        <td>884</td>
+                        <td>Aquisição Software-TI</td>
+                        <td>Sistemas Aplicativos-Software</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 34 - Custos/Despesas - Estoque-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 34 - Custos/Despesas - Estoque</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>Equipamentos - Estoque TI</td>
+                        <td>Equipamentos - TI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Classificação Sintética 25 - Aquisição de Ativo-->
+        <section>
+            <table>
+                <caption>Classificação Sintética 25 - Aquisição de Ativo</caption>
+                <thead>
+                    <tr>
+                        <th>Classificação Analitica</th>
+                        <th>Grupo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>852</td>
+                        <td>Instalações</td>
+                        <td>Instalações</td>
+                    </tr>
+                    <tr>
+                        <td>377</td>
+                        <td>Móveis e Utensílios</td>
+                        <td>Móveis e Utensílios</td>
+                    </tr>
+                    <tr>
+                        <td>378</td>
+                        <td>Ferramentas</td>
+                        <td>Ferramentas</td>
+                    </tr>
+                    <tr>
+                      <td>379</td>
+                      <td>Máquinas/Equipamentos</td>
+                      <td>Máquinas, Aparelhos e Equipamentos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+</main>
+<footer>
+    <p>&copy; 2024 Portal Recebimento Fiscal. Todos os direitos reservados - Desenvolvido por Misael Gomes</p>
+</footer>
+</html>
